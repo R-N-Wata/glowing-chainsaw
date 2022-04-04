@@ -795,6 +795,7 @@ label:nth-child(2) input{
     .contact{
       overflow-x: hidden;
       padding:0 3rem;
+      flex-direction: column;
     }
 
     form{
@@ -807,16 +808,34 @@ label:nth-child(2) input{
       margin-top:4rem;
       font-size: 20px;
     }
+
+    .contact-info-p{
+      font-size: 1.2rem;
+      line-height:2.5rem
+    }
+    .contact-info{
+      width:100%;
+    
+    }
+    
+    .contact-form{
+      width:100%;
+      display:flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
     
     label{
       display:flex;
       gap:1rem;
       color: var(--grey);
+      font-size: 1rem;
     }
     input{
       margin-left:2rem;
+      margin-right:0;
       height:2rem;
-      width:70%;
+      width:89%;
     }
     
     
