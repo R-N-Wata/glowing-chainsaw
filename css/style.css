@@ -464,13 +464,13 @@ footer {
 }
 
 @media(max-width:500px){
- body{
-   overflow-x: hidden;
- }
- main, .about, .portfolio, .contact{
-  margin-left:0%;
+    body{
+      overflow-x: hidden;
+    }
+    main, .about, .portfolio, .contact{
+      margin-left:0%;
 
-}
+    }
 
 
   .togglenav{
@@ -538,12 +538,12 @@ footer {
       height: 12rem;
       border: 2px solid white;
       width: 0%;
-  }
+     }
 
-  li span{
- 
-    opacity: 1;
-  }
+      li span{
+    
+        opacity: 1;
+      }
 
       ul{
     
@@ -581,12 +581,12 @@ footer {
     main, .about, .portfolio, .contact{
       /* margin-left:5%; */
      padding:0 3rem;
-   }
+     }
     .main-info{
      
      
       width:90%;
-    }
+     }
     main *{
       margin-top:.3rem;
     }
@@ -615,8 +615,6 @@ footer {
       font-size: 1.7rem;
       color:#FF7222;
        height:1.68rem;
-  
-     
      
      } 
 
@@ -724,7 +722,7 @@ footer {
     }
 
    
-  }
+  
   @media (max-width:420px){
       .logo{
         margin-top:7rem;
