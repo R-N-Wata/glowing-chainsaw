@@ -75,17 +75,13 @@ a{
 header {
 
  height:100vh;
- /* height:89%; */
  width:4%;
  display: flex;
  align-items: center;
  justify-content: center;
  flex-direction: column;
- /* background:#E8A884;
-  */
+  top:0;
   color:white;
-
-  
   background:black;
  position:fixed;
 }
@@ -272,11 +268,8 @@ h1 span, h2{
 /* about */
 .about{
   width:95%;
-  /* height:100vh; */
-
   padding-top:5rem;
   padding-bottom:5rem;
-  margin-bottom:5rem;
   animation: fadeInAnimation ease 6s;
   display: flex;
   flex-direction: column;
@@ -299,6 +292,8 @@ h2{
 
 .porfolio{
   height:100vh;
+  border:1px solid red;
+  padding-top:-2rem;
 
 
 }
@@ -306,8 +301,8 @@ h2{
 .projects{
   display:flex;
   width:89%;
-  height:100vh;
   flex-wrap:wrap;
+  margin-top:4rem;
  
   
 
@@ -316,6 +311,7 @@ h2{
 .project-1{
   border:1px rgb(136, 136, 136) solid;
   width:50%;
+  padding-bottom:3rem;
   
 
 }
@@ -413,7 +409,9 @@ label:nth-child(2) input{
 
 
 
-
+#textarea{
+  width:30%
+}
 
 footer {
 
@@ -423,11 +421,38 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
+@media (max-width:800px){
+  header {
+
+    height:100vh;
+    width:10%;
+   }
+
+   .projects{
+    display:flex;
+    width:89%;
+    /* height:70vh; */
+    flex-wrap:wrap;
+    margin-top:2rem;
+  }
+
+  .projects img{
+
+    height:12rem;
+  
+  }
+  
+}
 
 @media(max-width:500px){
  body{
    overflow-x: hidden;
  }
+ main, .about, .portfolio, .contact{
+  margin-left:0%;
+
+}
+
 
   .togglenav{
     display: flex;
@@ -462,11 +487,13 @@ footer {
     font-size:1.6rem;
     transition: 1s  ease-in;
     position:fixed;
+    top:0;
   }
   
  
     header {
       width:0;
+      top:0;
       transition: width .8s ease-in, visibility 1s;
       z-index: 5;
       display: flex;
@@ -637,18 +664,87 @@ footer {
       border:none;
     }
 
+    .contact{
+      overflow-x: hidden;
+    }
+
+    form{
+ 
+      height:40rem;
+      width:50%;
+      display:flex;
+      flex-direction: column;
+      gap:7%;
+      margin-top:4rem;
+      font-size: 20px;
+    }
+    
+    label{
+      display:flex;
+      gap:1rem;
+      color: #C4C4C4;
+    }
+    input{
+      margin-left:10vw;
+      height:2rem;
+    }
+    
+    label:nth-child(2) input{
+      /* margin-left:vw; */
+    }
+    
+    #textarea{
+      width:50%;
+    }
+    .submit{
+      width:6rem;
+      margin-left:110px;
+      background:#FF7222;
+      border-radius: 8%;
+      border:none;
+    
+    }
+    
+
 
       
 
   }
+  @media (max-width:420px){
+      .logo{
+        margin-top:2rem;
+      }
+      .projects img {
 
-  @media (max-width:390px){
-
-    html{
-      padding-top:-10rem;
+          height: 11rem;
+        }
     }
+
+
+  @media (max-width:400px){
+
+   
     .logo{
       margin-top:4rem;
     }
 
+
+  }
+
+  
+
+  @media (max-width:360px){
+
+    .logo{
+      margin-top:6rem;
+    }
+
+    .projects img {
+
+      height: 10rem;
+    }
+
+    .project-1{
+      padding:1.8rem 0;
+    }
   }
