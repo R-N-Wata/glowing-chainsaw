@@ -519,6 +519,7 @@ footer {
       flex-direction: row;
        color:white;
    
+       position: relative;
        background:black;
        position:fixed;
      }
@@ -557,7 +558,10 @@ footer {
         gap: 2rem;
       }
       .logo{
-        margin-top:9rem;
+        margin-top:1.5rem;
+        position: absolute;
+        width:2rem;
+
       }
 
       .bars{
@@ -724,9 +728,9 @@ footer {
    
   
   @media (max-width:420px){
-      .logo{
+      /* .logo{
         margin-top:7rem;
-      }
+      } */
       .projects img {
 
           height: 11rem;
