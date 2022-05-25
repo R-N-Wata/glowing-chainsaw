@@ -432,22 +432,24 @@ footer {
   .togglenav{
     display: flex;
     gap:5rem;
+    position: absolute;
   }
   .bars{
     
     color:white;
-    transition: opacity 5s  ease-in;
+    transition: 1s  ease-in-out;
     opacity: 1;
 
     
   }
 
-  .close-nav i{
+  .close-nav{
     color:white;
     position:absolute;
     left:5px;
     opacity: 0;
     z-index: 8;
+    transition: 1s  ease-in-out;
 
   }
   
@@ -458,7 +460,7 @@ footer {
     margin-left:2rem;
     position: relative;
     font-size:1.6rem;
-    transition: 1s  ease-in-out;
+    transition: 1s  ease-in;
     position:fixed;
   }
   
@@ -637,5 +639,16 @@ footer {
 
 
       
+
+  }
+
+  @media (max-width:390px){
+
+    html{
+      padding-top:-10rem;
+    }
+    .logo{
+      margin-top:4rem;
+    }
 
   }

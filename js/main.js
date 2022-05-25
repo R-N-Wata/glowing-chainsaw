@@ -30,18 +30,21 @@ toggleNav.addEventListener('click', () => {
 
         header.style.width = '100%'
         
-        toggleNav.style.marginLeft = '24rem'
-        // toggleNav.style.transform = 'rotateY(180deg)';
+        toggleNav.style.right = '1rem'
+        toggleNav.style.transform = 'rotateY(180deg)';
         
-        // openNav.style.opacity= '0'
-        // closeNav.style.opacity= '1'
+        openNav.style.opacity= '0'
+        closeNav.style.opacity= '1'
         navBar.style.opacity= '1'
         
 
     }else{
         header.style.width = '0'
-        
-        toggleNav.style.marginLeft = '2rem'
+        toggleNav.style.transform = 'rotateY(-180deg)';
+        openNav.style.transition = 'opacity 1s ease-in'
+        openNav.style.opacity= '1'
+        closeNav.style.opacity= '0'
+        toggleNav.style.right = '21rem'
         navBar.style.opacity= '0'
        
     }
