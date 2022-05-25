@@ -221,16 +221,18 @@ span > span {
   font-size: 2rem;
 }
 main p{
-
-  width:510px;
-  margin-top:-1rem;
+  /* border:1px solid red; */
+  width:6rem;
+  margin-top:1.5rem;
  
 }
  
  .text{
+   /* position:absolute; */
   font-size: 45px;
   color:#FF7222;
-  height:1.68rem;
+  height:2.7rem;
+  /* border:1px solid green; */
 
 
 } 
@@ -292,7 +294,6 @@ h2{
 
 .porfolio{
   height:100vh;
-  border:1px solid red;
   padding-top:-2rem;
 
 
@@ -410,7 +411,11 @@ label:nth-child(2) input{
 
 
 #textarea{
-  width:30%
+  max-width: 70%;
+  min-height: 75px;
+  outline: none;
+  resize: none;
+  border: 1px solid grey;
 }
 
 footer {
@@ -421,11 +426,25 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media (max-width:800px){
+@media (max-width:850px){
   header {
 
     height:100vh;
     width:10%;
+   }
+
+   .main{
+ 
+    margin-left:5rem;
+    padding-left:3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:5rem;
+    width:89%;
+    /* border:1px solid red; */
+    
    }
 
    .projects{
@@ -538,7 +557,7 @@ footer {
         gap: 2rem;
       }
       .logo{
-        margin-top:8rem;
+        margin-top:9rem;
       }
 
       .bars{
@@ -550,14 +569,11 @@ footer {
   /* main */
     main{
       position:relative;
-      margin-left:0;
+      margin-left:0 !important;
       padding-left:3rem;
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap:2rem;
-      width:100%;
+     
+      gap:2rem !important;
+      width:100% !important;
       
       
       
@@ -598,6 +614,11 @@ footer {
       color:white;
       font-size: 1.7rem;
       color:#FF7222;
+       height:1.68rem;
+  
+     
+     
+     } 
 
     } 
     h1 span, h2{
@@ -666,12 +687,13 @@ footer {
 
     .contact{
       overflow-x: hidden;
+      padding:0 3rem;
     }
 
     form{
  
       height:40rem;
-      width:50%;
+      width:100%;
       display:flex;
       flex-direction: column;
       gap:7%;
@@ -685,8 +707,9 @@ footer {
       color: #C4C4C4;
     }
     input{
-      margin-left:10vw;
+      margin-left:2rem;
       height:2rem;
+      width:70%;
     }
     
     label:nth-child(2) input{
@@ -694,25 +717,17 @@ footer {
     }
     
     #textarea{
-      width:50%;
+      width:70%;
+     
+      height: 10rem;;
+      border: 1px solid grey;
     }
-    .submit{
-      width:6rem;
-      margin-left:110px;
-      background:#FF7222;
-      border-radius: 8%;
-      border:none;
-    
-    }
-    
 
-
-      
-
+   
   }
   @media (max-width:420px){
       .logo{
-        margin-top:2rem;
+        margin-top:7rem;
       }
       .projects img {
 
@@ -724,20 +739,15 @@ footer {
   @media (max-width:400px){
 
    
-    .logo{
-      margin-top:4rem;
-    }
-
-
+   
+  
   }
-
+  @media (max-width:375px){
+    
+    }
   
 
   @media (max-width:360px){
-
-    .logo{
-      margin-top:6rem;
-    }
 
     .projects img {
 
