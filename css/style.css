@@ -290,6 +290,26 @@ h2{
   font-size: 30px;
 }
 
+.skills{
+  border-top:1px solid #C4C4C4;
+  border-bottom:1px solid #C4C4C4;
+  display: flex;
+  justify-content: center;
+  gap:2rem;
+  margin-bottom:3rem;
+  margin-top:2rem;
+  padding:2rem 0;
+}
+
+.skills img{
+  width:2rem;
+  height:2.3rem;
+}
+
+.skills :nth-child(1) img{
+  width:25rem;
+}
+
 /* portfolio */
 
 .porfolio{
@@ -468,7 +488,7 @@ footer {
       overflow-x: hidden;
     }
     main, .about, .portfolio, .contact{
-      margin-left:0%;
+      /* margin-left:0%; */
 
     }
 
@@ -644,8 +664,8 @@ footer {
     }
 
     div > p {
-      width: 95%;
-      font-size: 1.2rem;
+      width: 100%;
+      font-size: 1rem;
   }
 
     h2{
