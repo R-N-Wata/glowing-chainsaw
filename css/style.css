@@ -549,6 +549,7 @@ footer {
       ul{
     
         height:65vh;
+        padding-top:7rem;
         
       }
       
@@ -745,8 +746,45 @@ footer {
   
   }
   @media (max-width:375px){
-    
+    .close-open{
+      margin-left: 1rem;
+      display: flex;
+      margin-left: 2px;
+      left: 3rem;
     }
+    }
+
+    @media(max-height:680px){
+      .logo{
+        margin-top: 2.2rem;;
+      }
+      
+      ul{
+        padding-top: 6rem;
+    
+      }
+
+      .main-info{
+     
+     
+        margin-top:4rem;
+       }
+    }
+    
+    @media(max-height:640px){
+      .logo{
+        margin-top: 2.6rem;;
+      }
+    }
+    @media(max-height:600px){
+      .logo{
+        margin-top: 2.7rem;;
+      }
+     
+    }
+  
+    
+
   
 
   @media (max-width:360px){

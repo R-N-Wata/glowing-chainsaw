@@ -31,6 +31,7 @@ toggleNav.addEventListener('click', () => {
         header.style.width = '100%'
         
         toggleNav.style.right = '1rem'
+       
         toggleNav.style.transform = 'rotateY(180deg)';
         
         openNav.style.opacity= '0'
