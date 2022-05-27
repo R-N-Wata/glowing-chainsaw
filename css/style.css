@@ -96,7 +96,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top:-3rem;
+  margin-top:-2rem;
 
 }
 ul{
@@ -221,8 +221,8 @@ span > span {
   font-size: 2rem;
 }
 main p{
-  /* border:1px solid red; */
-  width:6rem;
+  
+  width:80%;
   margin-top:1.5rem;
  
 }
@@ -281,7 +281,7 @@ h1 span, h2{
   display: flex;
 }
 
-div > p{
+.about div > p{
   width:89%;
   font-size:1.4rem;
 
@@ -445,6 +445,16 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media(max-width:1024px){
+  .logo{
+    margin-top:-6rem
+  }
+
+  .text{
+    font-size:35px;
+  }
+}
 
 @media (max-width:850px){
   header {
@@ -664,7 +674,7 @@ footer {
     }
 
     div > p {
-      width: 100%;
+      /* width: 100%; */
       font-size: 1rem;
   }
 
@@ -774,7 +784,7 @@ footer {
     }
     }
 
-    @media(max-height:680px){
+    /* @media(max-height:680px){
       .logo{
         margin-top: 2.2rem;;
       }
@@ -789,14 +799,15 @@ footer {
      
         margin-top:4rem;
        }
-    }
+    } */
     
-    @media(max-height:640px){
+    /* @media(max-height:640px){
       .logo{
         margin-top: 2.6rem;;
       }
-    }
-    @media(max-height:600px){
+    } */
+    @media(max-height:600px), 
+    (max-width:360px){
       .logo{
         margin-top: 2.7rem;;
       }
