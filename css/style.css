@@ -129,29 +129,39 @@ a{
 /* nav bar */
 header {
 
- height:100vh;
+ height:100%;
  width:4%;
  display: flex;
  align-items: center;
  justify-content: center;
  flex-direction: column;
-  top:0;
   color:white;
   background:black;
  position:fixed;
+
 }
 
+.nav-bar{
+  height:100%;
+}
+.logo--container{
+  height:10%;
+  display:flex;
+  align-items: center;
+  width:70%;
+  
+}
 .logo{
   background:var(--orange);
   margin-left:3rem;
   border-radius: 50%;
-  width:25%;
+  width:35%;
   height:2rem;
   color:black;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top:-2rem;
+ 
 
 }
 ul{
@@ -160,10 +170,9 @@ ul{
   flex-direction: column;
   gap:2rem;
   width:10rem;
-  height:80vh;
+  height:70%;
   align-items: center;
   justify-content: center;
-
   margin-left:-2rem;
 
 
@@ -199,7 +208,7 @@ li span{
 }
 
 .vertical-line{
-  height:60%;
+  height:20%;
   border:2px solid white;
   width:1%;
   margin-left:3.8rem;
@@ -414,7 +423,14 @@ h2{
   
 }
 
+.project-title{
+  color:var(--grey);
+  font-size: 1.3rem;;
+}
 
+.project--des{
+  font-size:1rem;
+}
 .manea, .ricknmorty{
   padding-right:2rem;
 }
@@ -439,7 +455,7 @@ h2{
   color:black;
 }
 
-.visit:hover, .submit:hover{
+.visit:hover, .contact--submit-btn:hover{
   background-color: #6f3311;
   cursor: pointer;
 }
@@ -466,58 +482,67 @@ h2{
 
 }
 
+.contact--icons{
+  display: flex;
+  gap:1rem;
+}
+.contact--icons img {
+  width:2.5rem;
+  
+}
+
 .contact-form{
   width:47%;
   display:flex;
   justify-content: flex-end;
   align-items: flex-end;
+  padding-bottom:8rem;
 }
 
 form{
- 
-  height:40rem;
-  width:89%;
-  display:flex;
-  flex-direction: column;
-  gap:7%;
-  margin-top:4rem;
-  font-size: 20px;
-  /* justify-content: flex-end; */
-  align-items: flex-end;
+  width:70%
+}
+
+input[type=text], textarea{
+  width:50%;
+  font-size: 1.25rem;
+  width: 100%; /* Full width */
+  padding: 0.75rem; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: .25rem; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: .375rem; /* Add a top margin */
+  margin-bottom: 1rem; /* Bottom margin */
+  resize: vertical
+
 }
 
 label{
-  display:flex;
-  gap:1rem;
   color: var(--grey) ;
 }
-input{
-  margin-right:6rem;
-  height:2rem;
-}
 
-label:nth-child(2) input{
-  /* margin-left:30px; */
-}
 
-.submit{
+
+.contact--submit-btn{
   width:6rem;
-  /* margin-left:110px; */
+  padding:.5rem;
   background:var(--orange);
   border-radius: 8%;
   border:none;
+  justify-self: flex-end;
+  
 
 }
 
 
 
-#textarea{
+/* #textarea{
   max-width: 70%;
   min-height: 75px;
   outline: none;
   resize: none;
   border: 1px solid grey;
-}
+} */
 
 .footer {
 
@@ -597,7 +622,7 @@ label:nth-child(2) input{
   .close-nav{
     color:white;
     position:absolute;
-    left:5px;
+    left:1.5rem;
     opacity: 0;
     z-index: 8;
     transition: 1s  ease-in-out;
@@ -652,25 +677,18 @@ label:nth-child(2) input{
     
         opacity: 1;
       }
-
-      ul{
-    
-        height:65vh;
-        padding-top:7rem;
-        
-      }
       
       .nav-bar{
         display: flex;
         flex-direction: column;
         gap: 2rem;
       }
-      .logo{
-        margin-top:1.4rem;
-        position: absolute;
-        width:2rem;
+    
+        .logo{
+          margin-top: 1rem;
+        }
 
-      }
+      
 
       .bars{
         z-index: 7;
@@ -792,21 +810,18 @@ label:nth-child(2) input{
       border:none;
     }
 
+    /* contact */
+
     .contact{
       overflow-x: hidden;
       padding:0 3rem;
       flex-direction: column;
     }
 
+   
+
     form{
- 
-      height:40rem;
       width:100%;
-      display:flex;
-      flex-direction: column;
-      gap:7%;
-      margin-top:4rem;
-      font-size: 20px;
     }
 
     .contact-info-p{
@@ -824,27 +839,7 @@ label:nth-child(2) input{
       justify-content: flex-end;
       align-items: flex-end;
     }
-    
-    label{
-      display:flex;
-      gap:1rem;
-      color: var(--grey);
-      font-size: 1rem;
-    }
-    input{
-      margin-left:2rem;
-      margin-right:0;
-      height:2rem;
-      width:89%;
-    }
-    
-    
-    #textarea{
-      width:70%;
-     
-      height: 10rem;;
-      border: 1px solid grey;
-    }
+  
     .footer{
       padding-left:0rem;
     }
@@ -860,12 +855,6 @@ label:nth-child(2) input{
     }
 
 
-  @media (max-width:400px){
-
-   
-   
-  
-  }
   @media (max-width:375px){
     .close-open{
       margin-left: 1rem;
@@ -878,17 +867,6 @@ label:nth-child(2) input{
       width:95%
     }
     }
-
-  
-
-    @media(max-height:660px) and
-    (max-width:360px){
-      .logo{
-        margin-top: 2.7rem;;
-      }
-     
-    }
-  
     
 
   
