@@ -187,6 +187,8 @@ li{
   width:20%;
   gap:1.5rem;
   transition: 4s ease-in;
+  
+  cursor: pointer;
 
  
 
@@ -214,7 +216,7 @@ li span{
   margin-left:3.8rem;
 }
 /* shows current page on navbar */
-.current{
+.current-page{
 
   border-bottom:2px solid white;
   color:var(--orange);
@@ -222,12 +224,10 @@ li span{
 
 
 
-
-li:hover span{
+ li:hover span{
   opacity:1;
 
-}
-
+} 
 
 
 
@@ -246,12 +246,12 @@ li a::after {
 li a:hover::after {
   width: 100%;
   transition: width .3s;
-}
+} 
 
-li a:hover,
+ /* li:hover,
 li a.active{
   transition: 0.5s ease-out;
-}
+}  */
 
 .close-open{
   display:none;
@@ -260,11 +260,10 @@ li a.active{
 
 
 /* main */
-main{
-  position:relative;
+.main{
+  /* position:relative; */
   width:95%;
   height:100vh;
-  /* padding-left:6rem; */
   display:flex;
   align-items: center;
   gap:3rem;
@@ -274,11 +273,11 @@ main{
 }
 
 
-main *{
+.main *{
   margin-top:.3rem;
 }
 
-main img{
+.main img{
   width:20rem;
   border-radius: 50%;;
 }
@@ -289,7 +288,7 @@ span > span {
   font-family: 'Grape Nuts', cursive;
   font-size: 2rem;
 }
-main p{
+.main p{
   
   width:80%;
   margin-top:1.5rem;
@@ -348,27 +347,40 @@ h1 span, h2{
 
 .about > div{
   display: flex;
+ 
+}
+.about--info{
+  display: flex;
+  flex-direction: column;
+}
+.about div > p{
+  width:60%;
+  font-size:1.1rem;
+
 }
 
-.about div > p{
-  width:95%;
-  font-size:1.4rem;
-
+.about-para{
+  display: flex;
+  flex-direction: column;
 }
 h2{
   font-size: 30px;
+}
+.border{
+  border-top:1px solid var(--grey);
+  padding:2rem 0;
 }
 
 .skills{
   border-top:1px solid var(--grey);
   border-bottom:1px solid var(--grey);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap:2rem;
   margin-bottom:3rem;
-  margin-top:2rem;
+  margin-top:0rem;
   padding:2rem 0;
-  width:95%;
+  width:30%;
 }
 
 .skills img{
@@ -697,7 +709,7 @@ label{
 
 
   /* main */
-    main{
+    .main{
       position:relative;
       margin-left:0 !important;
       padding-left:3rem;
@@ -717,7 +729,7 @@ label{
      
       width:90%;
      }
-    main *{
+    .main *{
       margin-top:.3rem;
     }
 
@@ -725,13 +737,13 @@ label{
       display: flex;
       justify-content: center;
     }
-    main img{
+    .main img{
       max-width: 70%;
     }
 
 
 
-    main p{
+    .main p{
     
       width:91%;
       margin-top:-1rem;
@@ -774,6 +786,24 @@ label{
     h2{
       margin-top:4rem;
     }
+
+    /* about */
+
+.about > div{
+  display: flex;
+
+ 
+}
+
+.about div > p{
+  width:100%;
+  
+
+}
+
+.skills{
+  width:96%;
+}
   /* portfolio */
 
     .porfolio{
