@@ -443,40 +443,40 @@ h2{
 .project--des{
   font-size:1rem;
 }
-.manea, .ricknmorty{
+.manea, .simpyug{
   padding-right:2rem;
 }
 
 
-.soulful, .taxi{
+.soulful, .simps{
   padding-left:2rem;
 }
 
-.ricknmorty , .taxi{
+.simpyug, .simps{
   padding-top:4rem;
   /* border-bottom: none; */
 }
 
 
 
-.gif{
+.images{
   width:80%;
   height:14rem;
   overflow:hidden;
   border-radius: 4%;;
 }
 
-.image-manea, .image-ricknmorty, .image-soulful{
+.image-manea, .image-ricknmorty, .image-soulful, .image-simyug, .image-simps{
   width:100%;
   height:100%;
  border-radius: 4%;;
  transition:.7s;
 
 }
-.image-manea:hover, .image-ricknmorty:hover, .image-soulful:hover{
-  transform: scale(1.3);
+.image-manea:hover, .image-ricknmorty:hover, .image-soulful:hover, .image-simyug:hover, .image-simps:hover{
+  transform: scale(1.1);
 }
-
+/* 
 .image-manea{
  background: url('/img/gif/Manea.gif');
  background-position: center;
@@ -493,7 +493,7 @@ h2{
   background:url('/img/gif/rickNmorty.gif');
   background-position: center;
   background-size: cover;
-}
+} */
 
 
 
