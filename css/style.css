@@ -28,7 +28,10 @@ body {
   animation-fill-mode: forwards;
   font-family: 'Open Sans', sans-serif;
 }
-
+:root {
+  --orange: #FF7222;
+  --grey:#C4C4C4;
+}
 @keyframes fadeInAnimation {
   0% {
       opacity: 0;
@@ -56,7 +59,7 @@ span, p{
 }
 
 .line{
-  border:2px solid #C4C4C4;
+  border:2px solid var(--grey);
   width:2.5rem;
   margin-top:-1rem;
 }
@@ -69,10 +72,7 @@ a{
   text-decoration: none ;
 }
 
-:root {
-  --orange: #FF7222;
-  --grey:#C4C4C4;
-}
+
 
 .reveal {
   position: relative;
@@ -248,10 +248,6 @@ li a:hover::after {
   transition: width .3s;
 } 
 
- /* li:hover,
-li a.active{
-  transition: 0.5s ease-out;
-}  */
 
 .close-open{
   display:none;
@@ -261,7 +257,6 @@ li a.active{
 
 /* main */
 .main{
-  /* position:relative; */
   width:95%;
   height:100vh;
   display:flex;
@@ -270,6 +265,10 @@ li a.active{
   
   
   
+}
+
+.main-info{
+  width:60%
 }
 
 
@@ -296,11 +295,10 @@ span > span {
 }
  
  .text{
-   /* position:absolute; */
+
   font-size: 45px;
   color:var(--orange);
   height:2.7rem;
-  /* border:1px solid green; */
 
 
 } 
@@ -379,50 +377,39 @@ h2{
 }
 
 .skills{
-  /* border-top:1px solid var(--grey);
-  border-bottom:1px solid var(--grey); */
+
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  gap:2rem;
+  gap:.6rem;
   margin-bottom:3rem;
   margin-top:0rem;
-  padding:2rem 0;
-  width:50%;
+  padding:1rem 1rem;
+  width:40%;
+  border-left:1px solid var(--grey);
 }
-h4{
+
+
+.skills h3{
   margin:0;
+  color: var(--grey);;
   text-decoration: underline;
-  color:var(--grey);
   text-underline-offset: .3rem;
 }
 
-.front-end, .back-end, .database{
-  display:flex;
-  flex-direction: column;
-  gap:.9rem;
-  border:1px solid var(--grey);
-  /* height:40%; */
-  padding: 1rem 0;
-  padding-left:1rem;
-  width:80%;
-  border-radius:7%;
 
-  
-}
 .skills-img-container{
   display:flex;
-  width:100%;
-  gap:1rem
+  width:80%;
+  flex-wrap: wrap;
+  gap:2rem;
+ 
 }
 .skills img{
-  width:2rem;
-  height:2.3rem;
+  width:3.5rem;
+  height:2.8rem;
 }
 
-/* .skills :nth-child(1) img{
-  width:25rem;
-} */
 
 /* portfolio */
 
@@ -440,8 +427,6 @@ h4{
   flex-wrap:wrap;
   margin-top:4rem;
   padding-bottom:6rem;
- 
-  
 
 }
 
@@ -486,7 +471,6 @@ h4{
 
 .simpyug, .simps{
   padding-top:4rem;
-  /* border-bottom: none; */
 }
 
 
@@ -508,25 +492,6 @@ h4{
 .image-manea:hover, .image-ricknmorty:hover, .image-soulful:hover, .image-simyug:hover, .image-simps:hover{
   transform: scale(1.1);
 }
-/* 
-.image-manea{
- background: url('/img/gif/Manea.gif');
- background-position: center;
-  background-size: cover;
-}
-
-.image-soulful{
-  background: url('/img/gif/soulfulCuisine.gif');
-  background-position: center;
-  background-size: cover;
-}
-
-.image-ricknmorty{
-  background:url('/img/gif/rickNmorty.gif');
-  background-position: center;
-  background-size: cover;
-} */
-
 
 
 .visit{
@@ -616,16 +581,7 @@ label{
 
 }
 
-
-
-/* #textarea{
-  max-width: 70%;
-  min-height: 75px;
-  outline: none;
-  resize: none;
-  border: 1px solid grey;
-} */
-
+/* footer */
 .footer {
 
   height:5rem;
@@ -791,8 +747,7 @@ label{
       
     }
     .main, .about, .portfolio, .contact.footer{
-      /* margin-left:5%; */
-     padding-left:3rem;
+     padding:0 2rem;
      }
     .main-info{
      
@@ -808,10 +763,8 @@ label{
       justify-content: center;
     }
     .main img{
-      max-width: 70%;
+      border-radius: 50%;
     }
-
-
 
     .main p{
     
@@ -873,6 +826,7 @@ label{
 
 .about{
   padding-bottom:1rem;
+  width:100%;
 }
 
 .about-container{
@@ -882,7 +836,7 @@ label{
 }
 
 .about--info{
-  width:93%
+  width:100%
 }
 
 .skills{
@@ -890,8 +844,8 @@ label{
 }
 
 .skills img{
-  width:1.4rem;
-  height:1.7rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 h4{
   font-size:.8rem;
@@ -901,7 +855,7 @@ h4{
 .front-end, .back-end, .database{
   padding:.8rem 0;
   padding-left:.8rem;
-  width:90%;
+  width:100%;
 }
   /* portfolio */
 
@@ -919,7 +873,7 @@ h4{
     } 
 
     .project-1{
-      width:89%;
+      width:100%;
       border:none;
       border-bottom:var(--grey) 2px solid;
       padding-bottom:2rem;
