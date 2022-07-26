@@ -882,7 +882,7 @@ label{
 }
 
 .about--info{
-  width:90%
+  width:93%
 }
 
 .skills{
@@ -901,6 +901,7 @@ h4{
 .front-end, .back-end, .database{
   padding:.8rem 0;
   padding-left:.8rem;
+  width:90%;
 }
   /* portfolio */
 
