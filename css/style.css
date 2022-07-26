@@ -345,6 +345,12 @@ h1 span, h2{
   flex-direction: column;
 }
 
+.about-container{
+  display:flex;
+  
+  gap:6rem
+}
+
 .about > div{
   display: flex;
  
@@ -352,9 +358,10 @@ h1 span, h2{
 .about--info{
   display: flex;
   flex-direction: column;
+  width:50%;
 }
 .about div > p{
-  width:60%;
+  width:100%;
   font-size:1.1rem;
 
 }
@@ -372,25 +379,50 @@ h2{
 }
 
 .skills{
-  border-top:1px solid var(--grey);
-  border-bottom:1px solid var(--grey);
+  /* border-top:1px solid var(--grey);
+  border-bottom:1px solid var(--grey); */
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
   gap:2rem;
   margin-bottom:3rem;
   margin-top:0rem;
   padding:2rem 0;
-  width:30%;
+  width:50%;
+}
+h4{
+  margin:0;
+  text-decoration: underline;
+  color:var(--grey);
+  text-underline-offset: .3rem;
 }
 
+.front-end, .back-end, .database{
+  display:flex;
+  flex-direction: column;
+  gap:.9rem;
+  border:1px solid var(--grey);
+  /* height:40%; */
+  padding: 1rem 0;
+  padding-left:1rem;
+  width:80%;
+  border-radius:7%;
+
+  
+}
+.skills-img-container{
+  display:flex;
+  width:100%;
+  gap:1rem
+}
 .skills img{
   width:2rem;
   height:2.3rem;
 }
 
-.skills :nth-child(1) img{
+/* .skills :nth-child(1) img{
   width:25rem;
-}
+} */
 
 /* portfolio */
 
@@ -839,8 +871,36 @@ label{
 
 }
 
+.about{
+  padding-bottom:1rem;
+}
+
+.about-container{
+  display:flex;
+  flex-direction: column;
+  gap:3rem
+}
+
+.about--info{
+  width:90%
+}
+
 .skills{
-  width:96%;
+  width:100%
+}
+
+.skills img{
+  width:1.4rem;
+  height:1.7rem;
+}
+h4{
+  font-size:.8rem;
+}
+
+
+.front-end, .back-end, .database{
+  padding:.8rem 0;
+  padding-left:.8rem;
 }
   /* portfolio */
 
@@ -853,7 +913,7 @@ label{
       width: 100%;
        flex-wrap: nowrap; 
        gap:2rem; 
-       margin-bottom:5rem;
+      
        
     } 
 
@@ -869,8 +929,11 @@ label{
       padding-left:0;
     }
 
+    .images {
+      width:100%
+    }
     .projects img {
-
+   
       height: 13rem;
     }
 
