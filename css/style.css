@@ -746,7 +746,7 @@ label{
       
       
     }
-    .main, .about, .portfolio, .contact.footer{
+    .main, .about, .portfolio, .contact.footer, .contact{
      padding:0 2rem;
      }
     .main-info{
@@ -905,7 +905,6 @@ h4{
 
     .contact{
       overflow-x: hidden;
-      padding:0 3rem;
       flex-direction: column;
     }
 
