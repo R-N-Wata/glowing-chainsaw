@@ -465,11 +465,11 @@ h2{
 }
 
 
-.soulful, .simps{
+.soulful, .simps, .collab-work{
   padding-left:2rem;
 }
 
-.simpyug, .simps{
+.simpyug, .simps, .mvc, .collab-work{
   padding-top:4rem;
 }
 
@@ -482,14 +482,14 @@ h2{
   border-radius: 4%;;
 }
 
-.image-zentella, .image-ricknmorty, .image-soulful, .image-simyug, .image-simps{
+.image-zentella, .image-ricknmorty, .image-soulful, .image-simyug, .image-simps, .image-mvc, .image-collab-work{
   width:100%;
   height:100%;
  border-radius: 4%;;
  transition:.7s;
 
 }
-.image-zentella:hover, .image-ricknmorty:hover, .image-soulful:hover, .image-simyug:hover, .image-simps:hover{
+.image-zentella:hover, .image-ricknmorty:hover, .image-soulful:hover, .image-simyug:hover, .image-simps:hover, .image-mvc:hover, .image-collab-work:hover{
   transform: scale(1.1);
 }
 
